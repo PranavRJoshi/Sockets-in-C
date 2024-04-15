@@ -26,7 +26,7 @@ int main() {
 		exit(1);
 		//printf("There was an error making a connection to the remote socket \n\n");
 	}
-	
+
 	// recieve data from the server
 	char server_response[250];
 	recv(network_socket, &server_response, sizeof(server_response), 0);
