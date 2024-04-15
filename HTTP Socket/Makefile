@@ -9,7 +9,7 @@ EXEC=$(CFILES:.c=)
 DSYM=$(CFILES:.c=.dSYM)
 
 # The process goes something like this:
-# 1. make only invokes the make all command
+# 1. using `make` only invokes the make all command
 # 2. It looks for the prerequisite, $(EXEC) in this case, which has not been built yet, 
 # 3. The value of EXEC will be http_server and http_client (defined above in simplified way)
 # 4. The regular expression to generate executables is given below, % is a wildcard that represents any value
